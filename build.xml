@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name="Hello World program using Ant">
+
+	<target name="run" depends="compile">
+		<java classname="com.prasant.practise.HelloWorld">
+			<classpath path="/hello-world-ant-GIT-master/src/com/prasant/practise/" />
+		</java>
+	</target>
+	
+	<target name="compile">
+		<javac includeantruntime="false" srcdir="./src" destdir="/hello-world-ant-GIT-master/src/com/prasant/practise/" />
+	</target>
+</project>
